@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">SPPals Next.js!</a>
+          Welcome to <a href="https://www.sharepointpals.com/post/deploy-nextjs-application-to-azure-static-web-app/">SPPals Next.js!</a>
         </h1>
 
         <p className={styles.description}>
