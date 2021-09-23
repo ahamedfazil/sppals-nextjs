@@ -1,12 +1,7 @@
 import * as React from 'react';
 import useAsync from '../hooks/useAsync';
 
-
-export interface ApiTesterProps {
-
-}
-
-const ApiTester: React.FC<ApiTesterProps> = () => {
+const ApiTester: React.FC = () => {
 
     const { loading, error, value } = useAsync(() => {
         return new Promise((resolve, reject) => {
@@ -27,10 +22,12 @@ const ApiTester: React.FC<ApiTesterProps> = () => {
     });
 
     return (<>
-        Following message is from the server:
-        <div>{loading && <span>loading...</span>}</div>
-        <div>{error && <span>Error: Something went wrong</span>}</div>
-        <div>{value && <span>Message: {value}</span>}</div>
+        <div>
+            Following message is from the server:
+            <div>{loading && <span>loading...</span>}</div>
+            <div>{error && <span>Error: Something went wrong</span>}</div>
+            <div>{value && <span>Message: {value}</span>}</div>
+        </div>
     </>);
 }
 
