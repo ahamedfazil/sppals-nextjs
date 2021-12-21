@@ -9,7 +9,7 @@
     "lint": "next lint",
     "export": "next export",
     "api": "npm run build --prefix ../api && func start --prefix ../api",
-    "swa": "swa start http://localhost:3000 --api http://localhost:7071"
+    "swa": "swa start http://localhost:3000 --api-location http://localhost:7071"
   },
   "dependencies": {
     "next": "11.1.2",

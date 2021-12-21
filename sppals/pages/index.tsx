@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           Welcome to <a href="https://www.sharepointpals.com/post/deploy-nextjs-application-to-azure-static-web-app/">SPPals Next.js!</a>
         </h1>
 
-        <ApiTester/>
+        <ApiTester />
 
       </main>
 
